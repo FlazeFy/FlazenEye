@@ -64,7 +64,17 @@ body {
 }
 
 .content {
-  height: 90vh;
+  min-height: 90vh;
+  max-width: 1280px;
+  display: block;
+  margin-inline: auto;
+}
+
+.container-fluid {
+  background: var(--whiteColor);
+  padding: var(--spaceLG);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: var(--roundedLG);
 }
 
 body {

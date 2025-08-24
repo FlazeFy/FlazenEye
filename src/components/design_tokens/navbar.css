@@ -25,6 +25,7 @@
 .footer {
     margin-top: var(--spaceJumbo) !important;
     border-radius: var(--roundedJumbo) var(--roundedJumbo) 0 0;
+    background: var(--primaryColor) !important;
 }
 
 .navbar li {
