@@ -1,13 +1,60 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+:root {   
+  /* Typography */
+  --textHuge : 78px;
+  --textXJumbo : 48px;
+  --textJumbo : 26px;
+  --textXLG : 18px;
+  --textLG : 16px;
+  --textXMD : 14px;
+  --textMD : 13px;
+  --textSM : 12px;
+  --textXSM : 11px;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Rounded */
+  --roundedCircle : 100%;
+  --roundedJumbo : 34px;
+  --roundedXLG : 20px;
+  --roundedLG : 18px;
+  --roundedMD : 14px;
+  --roundedSM : 10px;
+  --roundedMini : 6px;
+
+  /* Spacing */
+  --spaceJumbo : 35px;
+  --spaceXLG : 24px;
+  --spaceLG : 20px;
+  --spaceXMD : 16px;
+  --spaceMD : 12px;
+  --spaceSM : 10px;
+  --spaceXSM : 8px;
+  --spaceXXSM : 6px;
+  --spaceMini : 4px;
+
+  /* Table column min width */
+  --tcolMinXSM : 60px;
+  --tcolMinSM : 120px;
+  --tcolMinMD : 140px;
+  --tcolMinLG : 180px;
+  --tcolMinJumbo : 240px;
+  --tcolMinHuge : 360px;
+
+  --primaryLightBG : #a698cd;
+  --successBG : #009b77;
+  --successDarkBG : #68baa6;
+  --dangerBG : #ff5791;
+  --warningBG : #ff8b68;
+  --warningDarkBG : #ffc455;
+  --warningLightBG : #fceddb;
+  --infoBG : #0074f6;
+  --infoLightBG : #0087f0;
+  --hoverBG : #F2F2F2;
+
+  --primaryColor : #6856e1;
+  --blackColor : #212121;
+  --darkColor : #494454;
+  --whiteColor : #FFFFFF;
+  --greyColor : #fcf7ff;
+  --shadowColor : #f7ebff;
 }
 
 html,
@@ -17,11 +64,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: var(--greyColor) !important;
+  font-family: 'Poppins', 'Lexend', sans-serif !important;
 }
 
 * {

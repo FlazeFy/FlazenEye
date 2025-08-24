@@ -1,0 +1,182 @@
+/*Navbar desktop*/
+.navbar, .footer {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.navbar {
+    position: sticky !important;
+    top: 0;
+    z-index: 999 !important;
+}
+.navbar ul, .footer {
+    margin: 0;
+    padding: var(--spaceMD);
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-inline: auto;
+    border-top: none !important;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    background: var(--primaryColor) !important;
+}
+.navbar ul {
+    border-radius: 0 0 var(--roundedJumbo) var(--roundedJumbo);
+}
+.footer {
+    margin-top: var(--spaceJumbo) !important;
+    border-radius: var(--roundedJumbo) var(--roundedJumbo) 0 0;
+}
+
+.navbar li {
+    position: relative;
+    margin-right: var(--spaceLG);
+}
+.navbar a, .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spaceLG) var(--spaceXLG);
+    color: var(--whiteColor);
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: var(--roundedLG);
+    letter-spacing: calc(var(--spaceMini)/2);
+}
+.navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    background:  var(--primaryColor);
+    color:var(--whiteColor);
+}
+.navbar .nav-button{
+    color:var(--whiteColor);
+    margin-top: var(--spaceXMD);
+    margin-left: var(--spaceXMD);
+    cursor:pointer;
+}
+.nav-link.sub {
+    font-size: var(--spaceSM) !important;
+    color: var(--whiteColor) !important;
+}
+.nav-link.sub.active {
+    background: transparent !important;
+    border-bottom: 2px solid var(--primaryColor);
+    border-radius: 0;
+}
+@media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+        left: -90%;
+    }
+    .navbar .dropdown .dropdown:hover > ul {
+        left: -100%;
+    }
+}
+
+/*Mobile Navigation*/
+.mobile-nav-toggle {
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+    .mobile-nav-toggle {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+}
+.navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(36, 41, 46, 0.9);
+    transition: 0.3s;
+    z-index: 999;
+}
+.navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: var(--spaceXMD);
+    right: var(--spaceXMD);
+}
+.navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: var(--spaceXMD);
+    bottom: var(--spaceXMD);
+    left: var(--spaceXMD);
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: var(--text2);
+}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+    color: var(--primaryColor);
+}
+.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+    margin: var(--spaceXMD);
+}
+
+/* Side Bar */
+.navbar-side {
+    position: absolute;
+    background: var(--primaryColor);
+    border-right: var(--spaceMini) solid var(--whiteColor);
+    height: 100vh;
+    width: 100%;
+    padding: var(--spaceLG);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 calc(var(--roundedJumbo) * 1.5) calc(var(--roundedJumbo) * 1.5) 0;
+}
+.navbar-side ul {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+}
+.navbar-side .nav-link {
+    background: transparent;
+    color: var(--whiteColor);
+    padding: var(--spaceLG) var(--spaceMD);
+    border-left: var(--spaceMini) solid transparent;
+    margin-top: var(--spaceMD);
+    font-weight: 600;
+    letter-spacing: calc(var(--spaceMini)/2);
+    text-transform: uppercase;
+}
+.navbar-side ul li {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.navbar-side .nav-link.active{
+    color: var(--whiteColor);
+    background: var(--infoBG);
+    border-radius: var(--roundedLG);
+}
+.navbar-side .nav-link:hover {
+    border-left: var(--spaceMini) solid var(--whiteColor);
+}
