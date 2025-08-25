@@ -34,7 +34,7 @@ const DashboardGudangKuIndex = () => {
                     {
                         iframes.map((item, idx) => (
                             <div className={item.class}>
-                                <AtomsIFrame key={idx} title={item.title} url={item.url}/>
+                                <AtomsIFrame key={idx} title={item.title} url={item.url} height={700}/>
                             </div>
                         ))
                     }
