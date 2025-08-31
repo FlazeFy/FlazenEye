@@ -3,7 +3,7 @@ import AtomsIFrame from "@/components/atoms/atoms_iframe";
 import OrganismsFooter from "@/components/organisms/organisms_footer";
 import OrganismsNavbar from "@/components/organisms/organisms_navbar";
 import { useState } from "react";
-import FilterYear from "./usecases/filter_year";
+import MoleculesFilterYear from "../../components/molecules/filter_year";
 
 const DashboardPinmarkerIndex = () => {    
     const [selectedYear, setSelectedYear] = useState(new Date().getFullYear())
@@ -52,8 +52,8 @@ const DashboardPinmarkerIndex = () => {
             height:500
         },
         {
-            title: "Total Visit Created Monthly",
-            url: "http://127.0.0.1:8080/EmbedController/total_visit_monthly_by_year?year=${selectedYear}",
+            title: "Total Visit Monthly",
+            url: `http://127.0.0.1:8080/EmbedController/total_visit_monthly_by_year?year=${selectedYear}`,
             class: "col-12",
             height:500
         },
@@ -64,7 +64,7 @@ const DashboardPinmarkerIndex = () => {
             <OrganismsNavbar/>
             <div className="content">
                 <div className="d-inline-block">
-                    <FilterYear onChange={(year) => setSelectedYear(year)} />
+                    <MoleculesFilterYear onChange={(year) => setSelectedYear(year)} />
                 </div>
                 <div className="row">
                     {

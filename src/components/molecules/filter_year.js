@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react"
 
-const FilterYear = ({ onChange }) => {
+const MoleculesFilterYear = ({ onChange }) => {
     const now = new Date().getFullYear()
     const years = Array.from({ length: 5 }, (_, i) => now - i)
 
@@ -29,4 +29,4 @@ const FilterYear = ({ onChange }) => {
     );
 }
 
-export default FilterYear;
+export default MoleculesFilterYear;
