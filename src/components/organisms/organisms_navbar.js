@@ -10,6 +10,7 @@ export default function OrganismsNavbar(props) {
                 <li><AtomsButton active={props.active} state="gudangku" url="gudangku" title="GudangKu" button_type="main_nav"/></li>
                 <li><AtomsButton active={props.active} state="wardrobe" url="wardrobe" title="Wardrobe" button_type="main_nav"/></li>
                 <li><AtomsButton active={props.active} state="myride" url="myride" title="MyRide" button_type="main_nav"/></li>
+                <li><AtomsButton active={props.active} state="kumande" url="kumande" title="Kumande" button_type="main_nav"/></li>
             </ul>
             <i className="fa-solid fa-bars mobile-nav-toggle" title="Open NavBar"></i>
         </nav>
