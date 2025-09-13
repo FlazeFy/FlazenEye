@@ -69,7 +69,7 @@ const DashboardPinmarkerIndex = () => {
                 <div className="row">
                     {
                         iframes.map((item, idx) => (
-                            <div className={item.class}>
+                            <div className={item.class} key={idx}>
                                 <AtomsIFrame key={idx} title={item.title} url={item.url} height={item.height}/>
                             </div>
                         ))
